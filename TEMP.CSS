@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+#target::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#target {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    color: red;
+    /* animation-name: head; */
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: scale(0);
+    /* height: 100vh; */
+    margin: 0;
+}
+
+@keyframes head {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        /* background-color: black; */
+        transform: translateY(1rem) scale(3);
+        color: red;
+    }
+    10% {
+        /* background-color: black; */
+        transform: translateY(2rem) scale(7);
+    }
+    15% {
+        /* background-color: black; */
+        transform: translateY(3rem) scale(10);
+    }
+    20% {
+        /* background-color: black; */
+        transform: translateY(4rem) scale(15);
+    }
+    25% {
+        /* background-color: black; */
+        transform: translateY(5rem) scale(20);
+        color: #ff7c7c;
+    }
+    30% {
+        /* background-color: black; */
+        transform: translateX(1rem) translateY(6rem) scale(25);
+    }
+    35% {
+        /* background-color: black; */
+        transform: translateX(2rem) translateY(7rem) scale(30);
+    }
+    40% {
+        /* background-color: black; */
+        transform: translateX(3rem) translateY(8rem) scale(35);
+    }
+    45% {
+        /* background-color: black; */
+        transform: translateX(4rem) translateY(9rem) scale(40);
+    }
+    50% {
+        /* background-color: black; */
+        transform: translateX(5rem) translateY(10rem) scale(45);
+        color: #efb6b6;
+    }
+    55% {
+        transform: translateX(6rem) translateY(11rem) scale(50);
+    }
+    60% {
+        transform: translateX(7rem) translateY(12rem) scale(55);
+    }
+    65% {
+        transform: translateX(8rem) translateY(13rem) scale(60);
+    }
+    70% {
+        transform: translateX(9rem) translateY(14rem) scale(65);
+    }
+    75% {
+        transform: translateX(10rem) translateY(18rem) scale(70);
+        color: #f6d4d4;
+    }
+    90% {
+        transform: translateX(15rem) translateY(22rem) scale(100);
+    }
+    100% {
+        /* transform: translateX(15rem) translateY(20rem) scale(160); */
+        color: white;
+    }
+}
